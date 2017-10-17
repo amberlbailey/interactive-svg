@@ -6,9 +6,8 @@
   animation: moving-eyes 1s linear infinite alternate;
 }
 
-
-
 @keyframes moving-eyes {
+
   0% {
     transform: translateX(0);
   }
@@ -16,4 +15,17 @@
   100% {
     transform: translateX(15px);
   }
+}
+
+#left-ear {
+  transition: all .5s linear;
+}
+
+#right-ear {
+  transition: all .5s linear;
+}
+
+#bear:hover #left-ear,
+#bear:hover #right-ear {
+  transform: translate(0, -8px);
 }
